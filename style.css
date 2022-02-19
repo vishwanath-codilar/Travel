@@ -142,4 +142,10 @@ footer .footer_inner{
     .booking{
         padding: 0 1rem;
     }
+    .bookings .booking a{
+      
+        font-size: 1.8rem;
+        font-weight: 700;
+    
+    }
 }
