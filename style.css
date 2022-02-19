@@ -1,0 +1,139 @@
+.banner{
+    width:100%;
+    height: 35rem;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.main_container .services{
+    width: 70%;
+    margin: 4rem auto;
+    display: flex;
+    column-gap: 3rem;
+    
+}
+.service{
+    width: 100%;
+   border: 1px solid black;
+   text-align: center;
+   
+    
+}
+.service img{
+    width: 100%;
+   
+    
+}
+.passport img{
+     height: 15rem;
+}
+.adhar_card img{
+    width: 80%;
+   padding: 2rem;
+}
+.gellary{
+    width: 100%;
+}
+.gellary h3{
+    font-size: 3rem;
+}
+.gellary .gellary_inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+.gellary .gellary_inner img{
+    width: 100%;
+}
+.bookings{
+    display: flex;
+    width: 70%;
+    margin: 3rem auto;
+   
+    column-gap: 4rem;
+    text-align: center;
+    
+
+}
+
+.bookings .booking{
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.bookings .booking a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.bookings .flight{
+    background-color: rgb(255, 123, 0);
+}
+.flight:hover{
+    background-color: rgba(255, 123, 0, 0.712);
+}
+.bookings .coching{
+    background-color: rgba(70, 139, 241, 0.918);
+}
+.coching:hover{
+    background-color: rgba(70, 138, 241, 0.699);
+}
+.bookings .train{
+    background-color: rgb(111, 192, 6);
+}
+.train:hover{
+    background-color: rgba(111, 192, 6, 0.61);
+}
+.bookings .hotel{
+    background-color: rgb(153, 5, 153);
+}
+.hotel:hover{
+    background-color: rgba(153, 5, 153, 0.582);
+}
+.bookings .online_application{
+    background-color: rgb(255, 123, 0);
+}
+.online_application:hover{
+    background-color: rgba(255, 123, 0, 0.712);
+}
+footer{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    
+
+}
+footer .footer_inner{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 4rem 0;
+    font-size: 1.3rem;
+    
+}
+@media screen and (max-width: 1200px){
+   .gellary .gellary_inner{
+       grid-template-columns: repeat(2,1fr);
+   } 
+    .bookings{
+        width: 30%;
+        flex-direction: column;
+       row-gap: 2rem;
+    }
+    .service img {
+      
+        height: 100%;
+    }
+    .adhar_card img {
+       
+        padding: 0;
+    }
+    .booking{
+        padding: 0 1rem;
+    }
+}
