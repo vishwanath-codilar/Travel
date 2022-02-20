@@ -3,12 +3,20 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
 
 </head>
 <body>
     <div class="main_container">
-        <div class="banner">
+        <div class="owl-carousel owl-theme">
             <img src="./img/27cf86df5899d9828418fb576b33806b.jpg" alt="">
+            <img src="./img/p4.jpg" alt="">
+            <img src="./img/p6.jpg" alt="">
+            <img src="./img/p1.jpg" alt="">
         </div>
         <div class="services">
             <div class="adhar_card service">
@@ -24,18 +32,18 @@
         <div class="gellary">
             <h3>What We Offer</h3>
             <div class="gellary_inner" >
-                <img src="./img/p1.jpg" alt="" data-aos="fade-left" data-aos-easing="linear"
-                data-aos-duration="2000">
-                <img src="./img/p6.jpg" alt=""  data-aos="fade-left" data-aos-easing="linear"
-                data-aos-duration="2000">
-                <img src="./img/p4.jpg" alt="" data-aos="fade-left" data-aos-easing="linear"
-                data-aos-duration="2000">
-                <img src="./img/p4.jpg" alt="" data-aos="fade-right" data-aos-easing="linear"
-                data-aos-duration="2000">
-                <img src="./img/p5.jpg.crdownload" alt="" data-aos="fade-right" data-aos-easing="linear"
-                data-aos-duration="2000">
-                <img src="./img/p6.jpg" alt="" data-aos="fade-right" data-aos-easing="linear"
-                data-aos-duration="2000">
+                <img src="./img/p1.jpg" alt="" data-aos="zoom-up" data-aos-easing="linear"
+                data-aos-duration="9000">
+                <img src="./img/p6.jpg" alt=""  data-aos="zoom-up" data-aos-easing="linear"
+                data-aos-duration="9000">
+                <img src="./img/p4.jpg" alt="" data-aos="zoom-up" data-aos-easing="linear"
+                data-aos-duration="9000">
+                <img src="./img/p4.jpg" alt="" data-aos="zoom-right" data-aos-easing="linear"
+                data-aos-duration="9000">
+                <img src="./img/p5.jpg" alt="" data-aos="zoom-right" data-aos-easing="linear"
+                data-aos-duration="9000">
+                <img src="./img/p6.jpg" alt="" data-aos="zoom-right" data-aos-easing="linear"
+                data-aos-duration="9000">
             </div>
         </div>
         <div class="bookings " >
@@ -61,6 +69,31 @@
     <script>
         AOS.init();
       </script>
+       <script type="text/javascript">
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel(
+                {
+                 loop:true,
+                 margin:10,
+                 nav:true,
+                 autoplay:true,
+                 autoplayTimeout:5000,
+                 
+                 responsive:{
+                     0:{
+                         items:1
+                     },
+                     600:{
+                         items:1
+                     },
+                     1000:{
+                         items:1
+                     }
+                 }
+                             }
+                         );
+        });
+    </script>
 </body>
 
 </html>
